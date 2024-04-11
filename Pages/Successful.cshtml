@@ -1,0 +1,47 @@
+@page
+@model SuccessfulModel
+@{
+    ViewData["Title"] = "Successful page";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+
+                <div class="card-header bg-success text-white">
+                    <h2 class="text-center mb-0">Reservation Successful!</h2>
+                </div>
+
+                <div class="card-body">
+                    <p class="lead">Thank you for your reservation.</p>
+
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <img src="@Model.car!.CarImage" style="width: 60%; height: 60%;" class="card-img-top"
+                                alt="Car Image">
+                        </div>
+
+                        <h5 class="card-title mt-3">Details of your reservation:</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Brand: @Model.car!.CarBrand</li>
+                            <li class="list-group-item">Model: @Model.car.CarModel</li>
+                            <li class="list-group-item">Description: @Model.car.CarDescription</li>
+                            <li class="list-group-item">Name: @Model.reservation!.ReservationName</li>
+                            <li class="list-group-item">Contact Number: @Model.reservation.ReservationContact</li>
+                            <li class="list-group-item">Reservation Date:
+                                @Model.reservation.ReservationDateAndTime</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a href="/Home" class="btn btn-primary mt-2 mb-2">Back to Home</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

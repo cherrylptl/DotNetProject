@@ -1,0 +1,33 @@
+@page
+@model LoginErrorModel
+@{
+    ViewData["Title"] = "Error page";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+
+                <div class="card-header bg-danger text-white">
+                    <h2 class="text-center mb-0">Login Unsuccessful!</h2>
+                </div>
+
+                <div class="card-body">
+                    <p class="lead">Try again for login.</p>
+                    <h5 class="card-title mt-3">Login Error:</h5>
+
+                    @foreach (var error in Model.errors)
+                    {
+                        <p class="text-danger">@error</p>
+                    }
+                </div>
+
+                <div class="card-footer text-center">
+                    <a href="Index" class="btn btn-primary mt-2 mb-2">Back to Login</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

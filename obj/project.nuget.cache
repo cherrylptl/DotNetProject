@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "350F+MYQ8Pmz0jqCDwvOB7/UCf9Xa1kxKqhkr8rPKHva49r5hy2giezQ53PqFD3xSuqKDCy+RIi660gOiHFq5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Mobile Solution Development\\Sem 1\\SoftwareDevelopment\\DotNetProject\\DotNetProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cherr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
